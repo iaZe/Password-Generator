@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script class="script" type="text/javascript" src="script.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h2>Gerador de senha</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="button" id="window">
+                <div class="img"><img src="imagens/clipboard.png"></div>
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Tamanho da Senha</label>
+                <input type="number" id="length" min='4' max='20' value='16' />
+            </div>
+            <div class="setting">
+                <label>Letras Maiusculas</label> 
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Letras Minusculas</label> 
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Números</label> 
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label>Símbolos</label> 
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Gerar Senha
+        </button>
+    </div>
+</body>
+</html>
